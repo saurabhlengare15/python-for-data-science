@@ -1,0 +1,20 @@
+1.Both the statements 7 & 3 and 3 & 7 will produce the same results
+ans - True
+
+2. What will be the output of the following code:
+        var_1=5
+        var_2=9
+        var_2+=var_1
+        print(var_2)
+ans - 14
+
+3.What will be the ouput of the following code:
+    List= ['apple', 'mango' ,'banana']
+    print(' apple ' in List)
+ans - False
+
+4.What will be the output of the following code:
+        a=5
+        b=-1
+        c=2
+ans - True
