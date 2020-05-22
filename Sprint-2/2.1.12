@@ -1,0 +1,20 @@
+x=10
+y=12
+
+#Code starts here
+# greater than
+is_greater = x>y
+
+# lesser than
+is_less = x<y
+
+# equal to
+is_equal = x==y
+
+# greater than or equal to
+is_greater_equal = x>=y
+
+# lesser than or equal to
+is_less_equal = x<=y
+
+# Code ends here
