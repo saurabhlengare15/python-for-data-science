@@ -1,0 +1,19 @@
+# given variable
+name = "John"
+
+# Code starts here
+list1 = ["John", "Rick"]
+list2 = ["Hall", "Rick"]
+john = False
+hall = False
+if name in list1:
+    john = True
+    
+# check for memberships
+if name in list2:
+    hall = True
+    
+# Display variables
+print(john)
+print(hall)
+# Code ends here
