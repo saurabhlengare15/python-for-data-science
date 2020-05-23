@@ -1,0 +1,18 @@
+1.Suspicious code should be placed within which block?
+ans - try
+
+2.What will be the output of the following code:
+try:
+    a = 0 / 1
+    message = "Quotient is" + ' ' + str(a)
+    print(message)
+except ZeroDivisionError:
+    message = "Cannot divide zero"
+    print(message)
+ans - Quotient is 0.0
+
+3.The code after finally block will always get executed
+ans - True
+
+4.Which of the following blocks are optional in a try-except statement?
+ans - else finally
