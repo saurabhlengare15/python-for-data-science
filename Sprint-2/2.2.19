@@ -1,0 +1,27 @@
+1.What will be the output of the following code :
+def func():
+    return("12")
+def func():
+    return("13")
+print(func())
+ans - 13
+
+2.Which of the following is not true with respect to functions in python?
+ans - In python, there are no built in functions.
+
+3.What will be the output of the following code:
+global a
+a=2
+def func():
+    a=1
+    b=2
+    return (a+b)
+print(func())
+ans - 3
+
+4.What will be the output of the following code:
+nums = [1,2,3,4,5]
+func = lambda x: (x*2)
+output = list(map(func, nums))
+print(output)
+ans - [2,4,6,8,10]
