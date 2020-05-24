@@ -1,0 +1,109 @@
+1.What is the output of the following code?
+class test:
+   def __init__(self,a):
+       self.a=a
+   def display(self):
+       print(self.a)
+obj=test()
+obj.display()
+ans - Error as one argument is required while creating the object
+
+2.Which of the following statements about python is/are true?
+ans - String and List are two of Python's standard data types, Python's string data type is immutable, In python, variable names are case sensitive
+
+3.What is the output of below program?
+def f1():
+    x=100
+    print(x)
+x=+1
+f1()
+ans - 100
+
+4.If area = { 'living' : [400, 450], 'living' : [650, 800], 'kitchen' : [300, 250], 'garage' : [250, 0]}, what would be the output of print (area['living'])?
+ans - [650, 800]
+
+5.What will be the output of the following code:
+   List_1=[2,6,7,8]
+   List_2=[2,6,7,8]
+   print(List_1[-2] + List_2[2])
+ans - 14
+
+6.In Python, List is a collection of unordered objects.
+ans - False
+
+7.What is the output of the following?
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x, y in d.items():
+   print(x, y)
+ans - 0 a 1 b 2 c
+
+8.Is 'abc'=="abc"?
+ans - True
+
+9.If Numbers=[10,5,7,8,9,5], what would be the output of print(max(Numbers)-min(Numbers))?
+ans - 5
+
+10.If Word='Captain America', what would be the output of print(('a' in Word) and ('s' in Word))?
+ans - False
+
+11.What is the output of this program?
+fo = open("foo.txt", "read+")
+print("Name of the file: ", fo.name)
+# Assuming file has following 5 lines
+# This is 1st line
+# This is 2nd line
+# This is 3rd line
+# This is 4th line
+# This is 5th line
+for index in range(5):
+    line = fo.readline()
+    print("Line No {} - {}".format(index, line))
+ #Close opened file
+fo.close()
+ans - Compilation Error
+
+12.What is the output of the following?
+x = "abcdef"
+while i in x:
+        print(i, end=" ")
+ans - Error
+
+13.What is the output of below program?
+def cube(x):
+   return x * x * x      
+x = cube(3)    
+print (x)
+ans - 27
+
+14.What will be the output of the following code:
+    print(((True) or (False) and (False) or (False)))
+ans - True
+
+15.What will be the output of the following code:
+    x1=int('16')
+    x2=8 + 8
+    x3= (4**2)
+    print(x1 is x2 is x3)
+ans - True
+
+16.Which of the following is correct?
+ans - An exception is an error that occurs at the runtime.
+
+17.Chose the correct statement to iterate over a dictionary using the help of keys?
+ans - for key in dictionary.keys():
+
+18.Given Word='warrior knights' ,A=Word[9:14],B=Word[-13:-16:-1]. What is B+A?
+ans - 'rawnight'
+
+19.What is the output of the below program?
+def to_upper(k):
+   return k.upper()
+x = ['ab', 'cd']
+print(list(map(to_upper, x)))
+ans - [‘AB’, ‘CD’]
+
+20.What is the output of the following?
+my_string = "hello world"
+k = [(i.upper(), len(i)) for i in my_string]
+print(k)
+ans - [(‘H’, 1), (‘E’, 1), (‘L’, 1), (‘L’, 1), (‘O’, 1), (‘ ‘, 1), (‘W’, 1), (‘O’, 1), (‘R’, 1), (‘L’, 1), (‘D’, 1)]
