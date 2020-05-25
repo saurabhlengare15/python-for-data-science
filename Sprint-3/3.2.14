@@ -1,0 +1,14 @@
+# Drop row with Name as nan
+df = df[df.index.notnull()]
+
+# Code starts here
+# Find out which type of pokemons (use only `Type 1`) have the highest chances of being Legendary
+highest_legendary = df[df['Legendary'] == True]['Type 1'].value_counts().idxmax()
+
+# Pokemons which do not have 'Type 2' but are Legendary
+single_type_legendary = len(df[df['Type 2'].isnull() & df['Legendary'] == True])
+
+print(df.shape)
+print(highest_legendary)
+print(single_type_legendary)
+# Code ends here
