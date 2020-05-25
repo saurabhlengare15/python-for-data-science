@@ -1,0 +1,18 @@
+import numpy as np
+np.random.seed(21)
+
+# Code starts here
+# create random 5x5 array
+z = np.random.random((5,5))
+#print(z)
+
+# minimum and maximum values
+zmin = z.min()
+print(zmin)
+zmax = z.max()
+print(zmax)
+
+# normalize
+z_norm = (np.array(z) - zmin)/(zmax-zmin)
+print(z_norm)
+# display
