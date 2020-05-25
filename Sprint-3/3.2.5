@@ -1,0 +1,10 @@
+import pandas as pd
+import numpy as np
+
+pincodes = [800678, 800456]
+numbers = [2567890, 2567657]
+labels = ['R','M']
+new = [[2567890,800678],[2567657,800456]]
+
+first = pd.DataFrame(new,index=labels,columns=['Number','Pincode'])
+print(first)
