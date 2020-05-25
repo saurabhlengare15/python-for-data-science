@@ -1,0 +1,18 @@
+# Code starts here
+
+# Which pokemon has the highest 'Health Points'?
+healthiest_pokemon = df['Health Points'].idxmax()
+print(healthiest_pokemon)
+
+# Which pokemon has the highest Special Atack points?
+special_attack_pokemon = df['Attack speed points'].idxmax()
+print(special_attack_pokemon)
+
+# Which pokemon has the highest Special Defense points?
+special_defense_pokemon = df['Defense speed points'].idxmax()
+print(special_defense_pokemon)
+
+# Which pokemon has highest Speed?
+fastest_pokemon = df['Speed'].idxmax()
+print(fastest_pokemon)
+# Code ends here
