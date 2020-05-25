@@ -1,0 +1,22 @@
+# Code starts here
+import numpy as np
+
+# initialize array
+array = np.array([3,4.5,3+5j,0])
+#print(array)
+
+# boolean filter
+real = np.isreal(array)
+#print(real)
+
+# boolean filter
+real_array = array[real]
+#print(real_array)
+
+imag = np.iscomplex(array)
+imag_array = array[imag]
+print(imag_array[0])
+
+print(real_array[0])
+print(real_array[1])
+# Code ends here
