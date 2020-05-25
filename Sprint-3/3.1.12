@@ -1,0 +1,15 @@
+1.The property by which NumPy can perform element-wise operation is called:
+ans - Vectorization
+
+2.What gets printed?
+import numpy as np
+ary = np.array([1,2,3,5,8])
+ary = ary + 1
+print (ary[1])
+ans - 3
+
+3.Which function returns its argument with a modified shape (array) and which one modifies the array itself?
+ans - reshape,resize
+
+4.If you have a NumPy array, in a variable bats, how would you access the data item at the 5th column, 2nd row?
+ans - bats[1,4]
