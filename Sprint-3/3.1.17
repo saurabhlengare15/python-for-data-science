@@ -1,0 +1,102 @@
+# Importing header files
+import numpy as np
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#New record
+new_record=[[50,  9,  4,  1,  0,  0, 40,  0]]
+#Reading file
+data = np.genfromtxt(path, delimiter=",", skip_header=1)
+print(data.shape)
+
+#Code starts here
+census = np.concatenate((data,new_record),axis=0)
+print(census.shape)
+#print(census[:,0])
+
+age = np.array(census[:,0])
+#print(age)
+max_age = age.max(axis=0)
+print(max_age)
+
+min_age = age.min()
+print(min_age)
+
+age_mean = age.mean()
+print("%.2f" % age_mean)
+
+age_std = np.std(age)
+print("%.2f" % age_std)
+
+col = np.array(census[:,2])
+
+val_0 = col == 0
+race_0 = np.array(col[val_0])
+#print(race_0)
+
+val_1 = col == 1
+race_1 = np.array(col[val_1])
+#print(race_1)
+
+val_2 = col == 2
+race_2 = np.array(col[val_2])
+#print(race_2)
+
+val_3 = col == 3
+race_3 = np.array(col[val_3])
+#print(race_3)
+
+val_4 = col == 4
+race_4 = np.array(col[val_4])
+#print(race_4)
+
+len_0 = len(race_0)
+len_1 = len(race_1)
+len_2 = len(race_2)
+len_3 = len(race_3)
+len_4 = len(race_4)
+
+len_arr = np.array([len_0,len_1,len_2,len_3,len_4])
+#print(len_arr)
+min_val = len_arr.min()
+
+if min_val == len_0:
+    minority_race = 0
+elif min_val == len_1:
+    minority_race = 1
+elif min_val == len_2:
+    minority_race = 2
+elif min_val == len_3:
+    minority_race = 3
+else:
+    minority_race = 4
+print(minority_race)
+
+
+age_val_60 = census[:,0] > 60
+senior_citizens = np.array(census[age_val_60])
+#print(senior_citizens)
+
+working_hrs_array = np.array(senior_citizens[:,6])
+working_hours_sum = working_hrs_array.sum()
+print(working_hours_sum)
+
+senior_citizens_len = len(senior_citizens)
+
+avg_working_hours = working_hours_sum/senior_citizens_len
+print("%.2f" % avg_working_hours)
+
+high_val = census[:,1] > 10
+high = np.array(census[high_val])
+
+low_val = census[:,1] <= 10
+low = np.array(census[low_val])
+
+income_high_val = np.array(high[:,7])
+avg_pay_high = income_high_val.mean()
+print("%.2f" % avg_pay_high)
+
+income_low_val = np.array(low[:,7])
+avg_pay_low = income_low_val.mean()
+print("%.2f" % avg_pay_low)
