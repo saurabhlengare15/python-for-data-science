@@ -1,0 +1,11 @@
+1.By which method can we get a summary of the numerical columns of a dataframe?
+ans - describe()
+
+2.Which method is used to reset your index labels to a previous version?
+ans - reset_index()
+
+3.You have two columns col1 and col2; and now you want to add a third column col3 which is the product of the first two columns i.e. col1*col2 . Which of the below is the appropriate syntax?
+ans - df[col3] = df[col1] * df[col2]
+
+4.How will you select the 200th observation and its 5th feature with pandas?
+ans - iloc[199,4]
