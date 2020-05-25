@@ -1,0 +1,18 @@
+# Code starts here
+
+# Different variants of `Type 2`
+type_two_num = df['Type 2'].nunique()
+print(type_two_num)
+
+# Total different types of `Type 2`
+type_two = df['Type 2'].unique()
+print(type_two)
+
+# Counts for different types of `Type 2`
+counts_type_two = df['Type 2'].value_counts()
+print(counts_type_two)
+
+# Number of Pokemons don't have `Type 2`
+no_type_two = df['Type 2'].isnull().sum()
+print(no_type_two)
+# Code ends here
