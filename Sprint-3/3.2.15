@@ -1,0 +1,9 @@
+# Code starts here
+# Convert 'Name' to uppercase
+df.index = df.index.str.upper()
+
+# Convert 'Type 1' to lowercase
+df['Type 1'] = df['Type 1'].apply(lambda x:x.lower())
+
+# Convert 'Type 2' to lowercase if present else 
+df['Type 2'] = df['Type 2'].apply(lambda x:x.lower() if isinstance(x,str) else None)
