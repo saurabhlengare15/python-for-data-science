@@ -1,0 +1,93 @@
+1.DataFrame is usually a _______ labeled data structure.
+ans - 2-D
+
+2.Pandas does easy handling of missing data in floating point as well as non-floating point data?
+ans - Yes
+
+3.Pandas is designed to work with _______ data.
+ans - Both of these
+
+4.Do NumPy arrays take up less memory as compared to Python lists?
+ans - Yes
+
+5.Are all the elements in NumPy array homogeneous (of same type) in nature?
+ans - Yes
+
+6._______ is a convenient method for combining the columns of two potentially differently-indexed DataFrames into a single result DataFrame.
+ans- join
+
+7.What gets printed?
+import numpy as np
+a = np.array([[1,2,3],[0,1,4]])
+b = np.zeros((2,3), dtype=np.int16)
+c = np.ones((2,3), dtype=np.int16)
+d = a + b + c
+print(d[1,2])
+ans - 5
+
+8.Dimensions should match along the axis you are _______ on
+ans - Concatenating
+
+9.What gets printed?
+import numpy as np
+a = np.array([1,2,3,4,5])
+b = np.arange(0,10,2)
+c = a + b
+print (c[4])
+ans - 13
+
+10.Which attribute is used to retrieve column names of a dataframe?
+ans - columns
+
+11.Which of the following operations is not common between Python lists and NumPy arrays?
+ans - Vectorization
+
+12.What gets printed?
+import numpy as np
+a = np.zeros(6)
+b = np.arange(0,10,2)
+c = a + b
+print (c[4])
+ans - Error
+
+13.What gets printed?
+import numpy as np
+ary = np.array([1,2,3,5,8])
+ary = ary + 1
+print (ary[1])
+ans - 3
+
+14.Pivot table can aggregate the data and summarize it by grouping the columns
+ans - TRUE
+
+15.What is the output?
+a = np.array([[0, 1, 0], [1, 0, 1]])
+a += 3
+b = a + 3
+print (a[1,2] + b[1,2])
+ans - 11
+
+16.Shape property in pandas is used to
+ans - See the number of rows and columns of the data
+
+17.The _______ method allows us to retrieve rows and columns by position.
+ans - iloc
+
+18.Series can have axis labels and it can be indexed by a label
+ans - Yes
+
+19.What gets printed?
+import numpy as np
+a = np.array([[0, 1, 2], [3, 4, 5]])
+b = a.sum(axis=1)
+print (b)
+ans - [3 12]
+
+20.What gets printed?
+import numpy as np
+a = np.array([1,2,3,5,8])
+b = np.array([0,3,4,2,1])
+c = a + b
+c = c*a
+print (c[2])
+ans - 21
