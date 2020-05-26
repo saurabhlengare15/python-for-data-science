@@ -1,0 +1,11 @@
+1.Can we use the apply function for both rows and columns with dataframes?
+ans - Yes
+
+2.Which method you would use to group categories of a column using pandas?
+ans - groupby()
+
+3.You have a pandas Series 'ser' which has numerical values in the range of 1-100. Suppose you apply conditional conditional filtering as mask = ser < 20. What data type is present in the variable mask?
+ans - Boolean
+
+4.Can we track merges with merge() method of pandas?
+ans - Yes
