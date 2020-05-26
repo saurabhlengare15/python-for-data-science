@@ -1,0 +1,23 @@
+# Code starts here
+
+# Subset the dataframe of  Attack speed points
+Special_attack = df[["Attack speed points"]]
+
+# Print first 5 rows
+print(Special_attack.head())
+
+# Create a function attack
+def attack(num): 
+    if num < 60: 
+        return "Low Attack"
+    elif num> 60 and num <= 120: 
+        return "Normal Attack"
+    else: 
+        return "High Attack"
+
+#  apply attack function on the feature Attack speed points.
+Special_attack['Attack speed points'] = Special_attack['Attack speed points'].apply(attack) 
+print(Special_attack)
+
+# Code ends here
+
