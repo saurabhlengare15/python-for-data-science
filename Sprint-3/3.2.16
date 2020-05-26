@@ -1,0 +1,8 @@
+import numpy as np
+# Code starts here
+# Determine which type (Type 1) pokemons are the fastest(Speed)
+df.groupby('Type 1')[['Speed']].median().sort_values(by='Speed',ascending=False)
+
+fastest_type = df.groupby('Type 1')['Speed'].agg(np.median).sort_values(ascending=False).idxmax()
+print(fastest_type)
+# Code ends here
