@@ -1,0 +1,7 @@
+import pandas as pd
+# Code starts here
+
+# mean value of 'Attack speed points' according to 'Generation' and 'Type 1'
+pivot = pd.pivot_table(df,index="Type 1",values="Attack speed points",columns="Generation")
+print(pivot)
+# Code ends here
