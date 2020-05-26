@@ -1,0 +1,14 @@
+import pandas as pd
+# Code starts here
+#Determine which type (Type 1) pokemons are the Strongest(Total)
+pokemon_type_avg = df.groupby('Type 1')[['Total']].mean().sort_values(by='Total',ascending=False)
+
+# Strongest pokemon
+strongest_type = df.groupby('Type 1')['Total'].agg(np.mean).sort_values(ascending=True).idxmax()
+print(strongest_type)
+
+# Weakest pokemon
+weakest_type = df.groupby('Type 1')['Total'].agg(np.mean).sort_values(ascending=True).idxmin()
+print(weakest_type)
+
+# Code ends here
