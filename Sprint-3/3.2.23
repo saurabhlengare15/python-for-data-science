@@ -1,0 +1,11 @@
+import pandas as pd
+# Code starts here
+# Set index name as Name
+#name = df.rename()
+# Create a subset of "Legendary","Generation","Attack" based on `True` Legendary 
+pokemon_stats = df[["Legendary","Generation","Attack"]]
+
+# Groupby on data to find highest Legendary pokemon
+pokemon_stats_legendary = pokemon_stats.groupby(['Generation','Name'])[["Attack"]].mean().idxmax()[0]
+print(pokemon_stats_legendary[1])
+# Code ends here
