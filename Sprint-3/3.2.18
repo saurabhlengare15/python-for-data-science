@@ -1,0 +1,15 @@
+import pandas as pd
+# Input 
+df1 = pd.DataFrame({'fruit': ['apple', 'banana', 'orange'] * 3,
+                    'weight': ['high', 'medium', 'low'] * 3,
+                    'price': np.random.randint(0, 15, 9)})
+
+df2 = pd.DataFrame({'product': ['apple', 'orange', 'pine'] * 2,
+                    'kilo': ['high', 'low'] * 3,
+                    'price': np.random.randint(0, 15, 6)})
+
+# Code starts here
+merged = pd.merge(df1,df2,left_on=['fruit','weight'],right_on=['product', 'kilo'],how="inner",suffixes=['_left', '_right'])
+print(merged)
+
+# Code ends here
