@@ -1,0 +1,25 @@
+#import packages
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# load data
+df = pd.read_csv(path)
+
+# reset index to 'Name'
+df.set_index('Name', inplace=True)
+
+# drop column '#'
+df.drop('#', inplace=True, axis=1)
+
+# Code starts here
+
+# Counts for 'Type 2' counts in descending order
+type_2 = df['Type 2'].value_counts(ascending=False)
+
+# bar chart
+type_2.plot(kind='bar')
+
+# display plot
+plt.show()
+# Code ends here
