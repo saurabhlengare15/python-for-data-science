@@ -1,0 +1,10 @@
+# Code starts here
+# Conditional filtering for 'Electric' pokemons
+electric = df[df['Type 1'] == 'Electric']
+
+# Scatter plot for 'Attack' vs 'HP'
+electric.plot.scatter(x='HP',y='Attack')
+
+# Display plot
+plt.show()
+# Code ends here
