@@ -1,0 +1,10 @@
+# Code starts here
+# Group Pokemons
+res = df.groupby(['Generation','Legendary']).size().unstack()
+
+# Plot stacked bar chart
+res.plot(kind='bar', stacked=True, figsize=(15,10))
+
+# Display plot
+plt.show()
+# Code ends here
